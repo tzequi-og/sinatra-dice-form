@@ -1,8 +1,21 @@
 <h1>Dice Roll</h1>
 
-<ul>
-  <li><a href="/dice/2/6">Roll two 6-sided dice</a></li>
-  <li><a href="/dice/2/10">Roll two 10-sided dice</a></li>
-  <li><a href="/dice/1/20">Roll one 20-sided die</a></li>
-  <li><a href="/dice/5/4">Roll five 4-sided dice</a></li>
-</ul>
+<div>
+  <form action="/process_roll">
+  <label for="dice">Number of dice to roll?</label>
+  <input id="dice" name="dice">
+  <label for="sides">How many sides per die?</label>
+  <input id="sides" name="sides">
+  <button>Roll!</button>
+  </form>
+</div>
+
+<div>
+  <h3>Some shortcuts: </h3>
+  <ul>
+    <li><a href="/process_roll?dice=2&sides=6">Roll two 6-sided dice</a></li>
+    <li><a href="/process_roll?dice=2&sides=10">Roll two 10-sided dice</a></li>
+    <li><a href="process_roll?dice=1&sides=20">Roll one 20-sided die</a></li>
+    <li><a href="process_roll?dice=5&sides=4">Roll five 4-sided dice</a></li>
+  </ul>
+</div>

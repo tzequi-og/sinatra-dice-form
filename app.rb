@@ -5,7 +5,7 @@ get("/") do
   erb(:homepage)
 end
 
-get ("/dice/:dice/:sides") do
+get ("/process_roll") do
   @dice_number = params.fetch("dice").to_i
   @dice_sides = params.fetch("sides").to_i
   
